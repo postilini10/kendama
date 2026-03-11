@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>site toch</title>
+    <link rel="icon" type="image/jpg" href="/html/NavbarOpgave/afbeeldingen/favicon.jpg">
+    <style>
+        body {
+            transition: transform 0.6s ease;
+        }
+
+        .magic-area {
+            padding: 40px;
+            background: lightblue;
+            text-align: center;
+            cursor: pointer;
+            margin: 100px;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: rgb(41, 64, 114);
+            margin: 0;
+            padding: 0;
+        }
+
+
+        p {
+            margin: 10px;
+            scroll-margin-top: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0f1739;
+            position: sticky;
+            top: 0;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            background-color: #2b2d69;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Geschiedenis</a></li>
+        <li><a href="trucjes.html">trucjes</a></li>
+        <li><a href="magic.html">Magic</a></li>
+        
+      </ul>
+    <div class="magic-area">
+        Hover hier voor magic
+    </div>
+    <h1>Titel1</h1>
+    <script>
+        const area = document.querySelector(".magic-area");
+
+        area.addEventListener("mouseenter", function () {
+            document.body.style.transform = "rotate(15deg)";
+        });
+
+        area.addEventListener("mouseleave", function () {
+            document.body.style.transform = "rotate(0deg)";
+        });
+    </script>
+</body>
+
+</html>
